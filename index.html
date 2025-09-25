@@ -9,11 +9,36 @@
     html,body{margin:0;height:100%;overflow:hidden}
     #video{width:0;height:0;opacity:0;position:absolute;z-index:-1}
     #avatarContainer{position:relative;width:100vw;height:100vh}
+    #infoBox {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25vw;   /* 25% del ancho */
+      height: 100vh; /* altura completa */
+      background: #fff;
+      color: #ffffff;
+      box-sizing: border-box;
+      border-radius: 5px;
+      overflow-y: auto;
+    }
+    #infoBox h3 {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
   <video id="video" autoplay muted playsinline aria-hidden="true"></video>
   <div id="avatarContainer"></div>
+
+  <!-- Panel lateral derecho -->
+  <div id="infoBox">
+    <h3>Avatar con seguimiento facial usando facial landmarking</h3>
+    <p>
+      Este avatar usa una heurística simple para detectar e imitar tus sonrisas con un retraso promedio de 300ms.
+      Cuando detecta movimientos en las comisuras de tus labios, reproduce una sonrisa Duchenne (genuina) con la misma intensidad en respuesta.
+      Adicionalmente, refleja los movimientos de tu cabeza y ojos en tiempo real.
+    </p>
+  </div>
 
   <script>
     // RUTAS RELATIVAS (respetar mayúsculas/minúsculas)
