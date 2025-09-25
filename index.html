@@ -15,7 +15,7 @@
     #video{width:0;height:0;opacity:0;position:absolute;z-index:-1}
     #avatarContainer{
       position:relative;
-      width: 60vw;
+      width: 70vw;
       height:100vh;
       z-index: 1;
     }
@@ -37,6 +37,7 @@
       justify-content: center; /* centra vertical */
       align-items: center;     /* centra horizontal */
       text-align: justify;      /* centra texto */
+      padding: 2.5vw;
     }
     #infoBox h3 {
       color: #000 !important;;
@@ -54,15 +55,15 @@
   <div id="infoBox">
     <h3>Avatar con seguimiento facial usando facial landmarking</h3>
     <p>
-      Este avatar usa una heurística simple para detectar e imitar tus sonrisas con un retraso promedio de 300ms.<br>
-      Cuando detecta movimientos en las comisuras de tus labios, reproduce una sonrisa Duchenne (genuina) con la misma intensidad en respuesta.<br>
+      Este avatar usa una heurística simple para detectar e imitar tus sonrisas con un retraso promedio de 300ms.
+      Cuando detecta movimientos en las comisuras de tus labios, reproduce una sonrisa Duchenne (genuina) con la misma intensidad en respuesta.
       Adicionalmente, refleja los movimientos de tu cabeza y ojos en tiempo real.
     </p>
     <p>
       La versión final utiliza modelos y flujos de inferencia complejos que solo pueden ejecutarse en entornos locales, 
-      dentro de la aplicación de juego y bajo especificaciones técnicas estrictas.<br>
+      dentro de la aplicación de juego y bajo especificaciones técnicas estrictas.
       Incluye modelos de inferencia emocional en lugar de heurísticas para la detección de sonrisas y
-      variabilidad en la duración e intensidad de la imitación para más naturalidad.<br>
+      variabilidad en la duración e intensidad de la imitación para más naturalidad.
       Además, incluye pestañeo automático preprogramado y animación de los movimientos basales de la cabeza y ojos que provienen de otro participante de la sesión, 
       no del mismo sujeto.
     </p>
