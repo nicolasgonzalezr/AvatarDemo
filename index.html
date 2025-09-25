@@ -76,6 +76,14 @@
 
   <!-- 👇 Usa tu archivo generado por Vite (nombre con hash) -->
   <script type="module" src="./assets/justSmiles.js"></script>
+
+    <!-- 👇 override al final para ganar prioridad -->
+  <style id="infoBoxOverride">
+    #infoBox, #infoBox * {
+      color: #000 !important;
+      -webkit-text-fill-color: #000 !important;
+    }
+  </style>
 </body>
 </html>
 
